@@ -1,10 +1,10 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
-def generate_lauch_description():
+def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='demo_node_py',
-            excutable='listener'
+            package='demo_nodes_py',
+            executable='listener'
         )
     ])
